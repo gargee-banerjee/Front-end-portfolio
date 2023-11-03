@@ -1,0 +1,33 @@
+.techstackInnerContainer {
+  padding: 1rem;
+  color: #a1a7b3;
+}
+.techstackInnerContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+.techstackCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.techstackLogoContainer {
+  width: 100px;
+  height: 100px;
+  background-color: #737ca870;
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+
+.techstackLogoContainer img {
+  width: 100%;
+  height: 100%;
+}
+.teckStackTitle {
+  text-transform: uppercase;
+}

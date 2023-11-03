@@ -1,0 +1,67 @@
+/*Designs Container*/
+.designsOuterContainer {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  overflow: auto;
+}
+
+.designsOuterContainer::-webkit-scrollbar {
+  /* display: none; Safari and Chrome */
+  /* width:50px; */
+  height:3px;
+  background: rgb(132, 128, 131);
+}
+/*Designs*/
+.designOuterContainer {
+  width: 24rem;
+  height: 20rem;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 2rem;
+  border: 0.1px solid rgba(255, 255, 255, 0.278);
+  border-radius: 20px;
+}
+
+.designOuterContainer:hover .designViewContainer {
+  opacity: 1;
+}
+
+.designViewContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(51, 53, 52, 0.46);
+}
+.designViewContainer > div {
+  background-color: aliceblue;
+  border-radius: 50px;
+  padding: 0.5rem;
+}
+.designImageContainer {
+  /* flex: 2; */
+  width: 20rem;
+  /* border: 1px solid red; */
+}
+.designImageContainer > img {
+  width: 100%;
+}
+
+.designNameContainer {
+  /* flex: 1; */
+  color: antiquewhite;
+}
