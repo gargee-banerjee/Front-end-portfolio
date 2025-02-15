@@ -1,12 +1,10 @@
 import { makeStyles } from "@material-ui/core";
 
 export default makeStyles((theme) => ({
-  headerOuterContainer: {
-    color: "#fefeff",
-  },
   headerInnerContainer: {
+    color: "#fefeff",
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "end",
     alignItems: "center",
     padding: theme.spacing(2),
   },
@@ -16,17 +14,28 @@ export default makeStyles((theme) => ({
     justifyContent: "center",
     gap: "1rem",
     "& a": {
-      color:"#fefeff",
+      color: "#fefeff",
       textDecoration: "none",
+      fontSize: "1rem",
+    },
+    [theme.breakpoints.down("sm")]: {
+      gap: "0.5rem",
+      "& a": {
+        fontSize: "0.7rem",
+      },
     },
   },
 
   resumeButtonContainer: {
     padding: theme.spacing(0.5, 2),
     cursor: "pointer",
-    border: "nome",
+    border: "none",
     outline: "none",
     backgroundImage: "linear-gradient(45deg, #7603CF, #05DDCC)",
     borderRadius: "5px",
+    [theme.breakpoints.down("sm")]: {
+      padding: theme.spacing(0.3, 1.5),
+      fontSize: "0.7rem",
+    },
   },
 }));

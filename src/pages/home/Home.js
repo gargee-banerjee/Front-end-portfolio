@@ -15,15 +15,15 @@ const Home = () => {
   return (
     <div className={classes.homeContainer}>
       <Header />
-      <Introduction />
-      <Caption caption1="TechStack" caption2={``} />
+      <Introduction /> 
+   <Caption caption1="TechStack" caption2={``} />
       <TechStack />
-      <Caption caption1="Live" caption2={`Projects`} />
+         {/* <Caption caption1="Live" caption2={`Projects`} />
       <ProjectLayout1 />
       <Caption caption1="My" caption2={`Designs`} />
       <CodePenIoDesigns/>
       <Caption caption1="Get" caption2={`in touch`} />
-      <Contact />
+      <Contact />  */}
     </div>
   );
 };

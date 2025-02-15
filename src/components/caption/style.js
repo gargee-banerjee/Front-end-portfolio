@@ -5,13 +5,17 @@ export default makeStyles((theme) => ({
   captionContainer: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "fles-start",
+    justifyContent: "flex-start",
     alignItems: "flex-start",
     position: "relative",
-    marginTop: "15rem",
+    marginTop: "10rem",
     color: "#444e67",
     fontSize: "7rem",
     fontFamily: "Passion One",
+    [theme.breakpoints.down("sm")]:{
+      fontSize: "3rem",
+
+    }
   },
   caption1: {
     position: "relative",

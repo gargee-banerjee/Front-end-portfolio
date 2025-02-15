@@ -2,14 +2,15 @@ import { makeStyles } from "@material-ui/core";
 import "../../assets/css/fontStyle.css";
 
 export default makeStyles((theme) => ({
-  introductionOuterContainer: {
-    color: "#fefeff",
-  },
   introductionInnerContainer: {
-    padding: "1rem",
     position: "relative",
-    // borderRight:"1px solid #05ddcc",
-    // boxShadow: "inset -86px 0px 49px -80px #05ddcc",
+    color: "#fefeff",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
+    justifyContent: "center",
+    padding: "5rem 0.5rem",
+    // fontFamily: "Passion One",
   },
   //Decor******************************
   decor: {
@@ -46,29 +47,42 @@ export default makeStyles((theme) => ({
   backImage2: {
     transform: "rotate(20deg)",
   },
-  backImage1:{
+  backImage1: {
     top: "5rem",
     width: "80%",
     right: "-20rem",
   },
   //Name style*******************************************************************************
+  nameOuterContainer: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "flex-start",
+  },
   greetContainer: {
     fontFamily: "Roboto Condensed",
     fontSize: "2rem",
     fontWeight: "bold",
-    // color: "#fefeff",
-    // textAlign: "center",
-    // margin: "1rem",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1rem",
+    },
   },
   nameContainer: {
     fontSize: "6rem",
     fontFamily: "Alfa Slab One",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "2rem",
+    },
   },
   designationContainer: {},
   aboutYouContainer: {
     width: "25rem",
     color: "#a5a5ae",
-    marginTop: "3rem",
+    marginTop: "1rem",
+    [theme.breakpoints.down("sm")]: {
+      width: "70%",
+      fontSize: "0.7rem",
+    },
   },
 
   //Resume style*****************************************************************************
@@ -81,6 +95,10 @@ export default makeStyles((theme) => ({
       backgroundImage: "linear-gradient(45deg, #7603CF, #05DDCC)",
       borderRadius: "5px",
       marginTop: "1rem",
+      [theme.breakpoints.down("sm")]: {
+        padding: theme.spacing(0.3, 1.5),
+        fontSize: "0.7rem",
+      },
     },
   },
 }));

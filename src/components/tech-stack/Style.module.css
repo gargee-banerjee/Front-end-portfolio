@@ -1,11 +1,12 @@
-.techstackInnerContainer {
+/* .techstackInnerContainer {
   padding: 1rem;
-  color: #a1a7b3;
-}
+} */
 .techstackInnerContainer {
+  color: #a1a7b3;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 .techstackCardContainer {
@@ -22,6 +23,7 @@
   background-color: #737ca870;
   border-radius: 20px;
   padding: 1.5rem;
+ 
 }
 
 .techstackLogoContainer img {

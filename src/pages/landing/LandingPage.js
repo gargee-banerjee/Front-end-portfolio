@@ -8,13 +8,13 @@ const LandingPage = () => {
 
   return (
     <div className={styles.landingPageContainer}>
-      <div className={styles.animationContainer}>
+      {/* <div className={styles.animationContainer}>
         <span className={styles.obj1}></span>
         <span className={styles.obj1}></span>
         <span className={styles.obj1}></span>
         <span className={styles.obj1}></span>
         <span className={styles.obj1}></span>
-      </div>
+      </div> */}
       <Home />
     </div>
   );
