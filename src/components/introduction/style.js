@@ -23,19 +23,23 @@ export default makeStyles((theme) => ({
   },
   "@keyframes animateBall": {
     "0%": {
-      transform: "translateY(-85rem) scale(0)",
+      transform: "translateY(-30rem) scale(0)",
     },
     "100%": {
-      transform: "translateY(85rem) scale(1)",
+      transform: "translateY(30rem) scale(1)",
     },
   },
   backgroundImageDecorContainer: {
     position: "absolute",
-    top: "0",
+    top: "10",
     right: "0",
     width: "40rem",
     height: "40rem",
     overflow: "hidden",
+    [theme.breakpoints.down("sm")]: {
+      width: "20rem",
+      height: "20rem",
+    },
   },
   backgroundImageDecor: {
     position: "absolute",
@@ -90,7 +94,7 @@ export default makeStyles((theme) => ({
     "& button": {
       padding: theme.spacing(0.5, 2),
       cursor: "pointer",
-      border: "nome",
+      border: "none",
       outline: "none",
       backgroundImage: "linear-gradient(45deg, #7603CF, #05DDCC)",
       borderRadius: "5px",

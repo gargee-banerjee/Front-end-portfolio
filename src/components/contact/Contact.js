@@ -9,7 +9,6 @@ const Contact = () => {
   const gitHubLink = `https://github.com/gargee-banerjee`;
   const linkedInLink = `https://www.linkedin.com/in/gargeebanerjee/`;
   return (
-    <div id="contactSection" className={classes.contactOuterContainer}>
       <div className={classes.contactInnerContainer}>
         <a href={gitHubLink} target="_blank" rel="noopener noreferrer">
           <IconButton >
@@ -25,7 +24,6 @@ const Contact = () => {
           <EmailIcon className={classes.contactIcon} />
         </IconButton>
       </div>
-    </div>
   );
 };
 

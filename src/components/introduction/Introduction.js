@@ -9,21 +9,21 @@ const Introduction = () => {
     "https://drive.google.com/file/d/1Uf8NXOWVmSFqzFzCwf2XRf9V6I7_vjMg/view?usp=sharing";
   return (
     <div className={classes.introductionInnerContainer}>
-      {/* <div className={classes.decor}></div> */}
-      {/* <div className={classes.backgroundImageDecorContainer}>
-          <img
-            src={img}
-            className={`${classes.backgroundImageDecor} ${classes.backImage1}`}
-            alt="backgroundImg"
-          ></img>
-          <img
-            src={img}
-            className={`${classes.backgroundImageDecor} ${classes.backImage2}`}
-            alt="backgroundImg"
-          ></img>
-        </div> */}
+      <div className={classes.decor}></div>
+      <div className={classes.backgroundImageDecorContainer}>
+        <img
+          src={img}
+          className={`${classes.backgroundImageDecor} ${classes.backImage1}`}
+          alt="backgroundImg"
+        ></img>
+        <img
+          src={img}
+          className={`${classes.backgroundImageDecor} ${classes.backImage2}`}
+          alt="backgroundImg"
+        ></img>
+      </div>
 
-       <div className={classes.nameOuterContainer}>
+      <div className={classes.nameOuterContainer}>
         <div className={classes.greetContainer}>Hey! I am</div>
         <div className={classes.nameContainer}>GARGEE</div>
       </div>
@@ -32,7 +32,7 @@ const Introduction = () => {
         I am a software engineer with a keen eye for building (and occasionally
         designing) interactive websites, bringing products to life.
       </div>
-     <div className={classes.resumeContainer}>
+      <div className={classes.resumeContainer}>
         <a href={resumeLink} target="_blank" rel="noreferrer">
           <button>View Resume</button>
         </a>

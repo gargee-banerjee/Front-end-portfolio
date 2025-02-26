@@ -25,6 +25,31 @@ export default makeStyles((theme) => ({
       },
     },
   },
+  contentSection: {
+    padding: "20px",
+    // border:"2px solid red",
+    position: "relative",
+    "& span": {
+      // zIndex: 1,
+    },
+    "&::before": {
+      content: '""',
+      display:"block",
+      width: "100%",
+      height: "100%",
+      borderRadius: "5px",
+      position: "absolute",
+      top: 0,
+      left: 0,
+      border: "1px solid rgb(111, 112, 113)",
+      transform: "scale(0)",
+      transition: "transform 0.2s ease-in-out",
+      zIndex: -1,
+    },
+    "&:hover::before": {
+      transform: "scale(1)",
+    },
+  },
 
   resumeButtonContainer: {
     padding: theme.spacing(0.5, 2),

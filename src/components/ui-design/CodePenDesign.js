@@ -4,7 +4,7 @@ import style from "./Style.module.css";
 const CodePenDesign = (props) => {
   const { imagePath, designName, designUrl } = props.designItem;
   return (
-    <a href={designUrl} target="_blank" rel="noreferrer">
+    <a href={designUrl} target="_blank" rel="noreferrer"  className={style.designLinkContainer}>
       <div className={style.designOuterContainer}>
         <div className={style.designImageContainer}>
           <img src={imagePath} alt="ui-design"></img>

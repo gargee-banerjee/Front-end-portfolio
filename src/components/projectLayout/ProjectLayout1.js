@@ -6,10 +6,10 @@ import { pjt9 } from "../../assets/index";
 
 function ProjectLayout1() {
   const classes = useStyles();
-  const decorImage= pjt9;
+  const decorImage = pjt9;
 
   return (
-    <div id="projectSection"className={classes.projectOuterContainer}>
+    <div id="projectSection" className={classes.projectOuterContainer}>
       <div
         className={`${classes.backgroundImageContainer} ${classes.backgroundImageContainerLeft}`}
       >
