@@ -1,16 +1,19 @@
 /*Designs Container*/
+.designLinkContainer{
+  text-decoration: none;
+}
 .designsOuterContainer {
   display: flex;
   gap: 1rem;
   width: 100%;
   padding: 0.5rem;
-  overflow: auto;
+  overflow-x: auto;
 }
 
 .designsOuterContainer::-webkit-scrollbar {
   /* display: none; Safari and Chrome */
   /* width:50px; */
-  height:3px;
+  height: 3px;
   background: rgb(132, 128, 131);
 }
 /*Designs*/
@@ -29,6 +32,14 @@
   border: 0.1px solid rgba(255, 255, 255, 0.278);
   border-radius: 20px;
 }
+/* @media (max-width: 600px) {
+  .designOuterContainer {
+    width: 14rem;
+    height: 10rem;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+} */
 
 .designOuterContainer:hover .designViewContainer {
   opacity: 1;

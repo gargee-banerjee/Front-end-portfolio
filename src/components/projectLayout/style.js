@@ -7,13 +7,9 @@ export default makeStyles((theme) => ({
     position: "relative",
     height: "600px",
     backgroundColor: "#393e591f",
-  },
-  projectInnerContainer: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    padding: "1rem",
-    height: "100%",
+    [theme.breakpoints.down("sm")]: {
+      height: "350px",
+    },
   },
 
   //Background absolute positioned Images******************************************************
@@ -37,12 +33,23 @@ export default makeStyles((theme) => ({
     right: "0px",
   },
 
+  projectInnerContainer: {
+    display: "grid",
+    gridTemplateColumns: "repeat(2, 1fr)",
+    gridTemplateRows: "auto",
+    overflow: "hidden",
+    height: "100%",
+  },
+
   //Project details style*******************************************************************************************
 
   //gap:1rem
   // fontSize: "2.5rem",title
   //padding: 1rem
   projectDetailsOuterContainer: {
+    gridColumn: "1/2",
+    justifySelf: "end",
+    alignSelf: "center",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -55,21 +62,32 @@ export default makeStyles((theme) => ({
     fontSize: "2.5rem",
     fontWidth: "bold",
     whiteSpace: "pre",
-    fontFamily: 'Alfa Slab One',
+    fontFamily: "Alfa Slab One",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1rem",
+    },
   },
+
   projectDescriptionContainer: {
-    width: "20rem", //check
     fontSize: "1rem",
+    width: "15rem",
     fontWeight: "lighter",
     color: "#fefeff",
     whiteSpace: "normal",
     textAlign: "right",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "0.7rem",
+      width: "auto",
+    },
   },
   projectTechStackContainer: {
     display: "flex",
     gap: "0.5rem",
     "& > img": {
       width: "1.5rem",
+      [theme.breakpoints.down("sm")]: {
+        width: "1rem",
+      },
     },
   },
   projectLinksContainer: {
@@ -78,37 +96,47 @@ export default makeStyles((theme) => ({
     "& button": {
       padding: theme.spacing(0.5, 3.5),
       cursor: "pointer",
-      border:"nome",
-      outline:"none",
-      backgroundImage:
-        "linear-gradient(45deg, #7603CF, #05DDCC)",
+      border: "nome",
+      outline: "none",
+      backgroundImage: "linear-gradient(45deg, #7603CF, #05DDCC)",
       borderRadius: "5px",
+      [theme.breakpoints.down("sm")]: {
+        padding: theme.spacing(0.2, 2),
+      },
     },
   },
 
   //Project image style*******************************************************************************************
   projectImageOuterContainer: {
-    // border: "7px solid red",
+    gridColumn: "2/3",
+    justifySelf: "start",
+    alignSelf: "center",
     position: "relative",
   },
   projectImageInnerContainer1: {
-    position: "absolute",
-    top: "-250px",
-    width:"200px",
-    "& img":{
-      width:"100%",
+    // position: "absolute",
+    // top: "-100px",
+    // left:"-120px",
+    width: "200px",
+    "& img": {
+      width: "100%",
     },
-    // transform: "rotate(-18.77deg)",
+    [theme.breakpoints.down("sm")]: {
+      width: "100px",
+    },
   },
   projectImageInnerContainer2: {
     position: "absolute",
     width: "200px",
-    top: "-100px",
+    top: "100px",
     left: "100px",
     "& img": {
       width: "100%",
     },
-    // transform: "rotate(18.77deg)",
+    [theme.breakpoints.down("sm")]: {
+      width: "80px",
+      left: "40px",
+    },
   },
 
   // test

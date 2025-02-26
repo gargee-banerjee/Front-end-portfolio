@@ -3,26 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body,
 html {
   min-height: 100vh;
-  min-width: 100%;
+  min-width: 100vw;
 }
+
 .landingPageContainer {
-  width: 100%;
-  height: 100%;
-  padding: 10rem 20rem;
+  width: 100vw;
+  min-height: 100vh;
   background-color: black;
   position: relative;
 
   /* background-image: linear-gradient(45deg, #7603cf, #05ddcc, #6f1569); */
   background-image: linear-gradient(45deg, #450e6f, #000);
 }
+
 .animationContainer {
   position: relative;
   display: flex;
   gap: 15rem;
 }
+
 .obj1 {
   width: 30px;
   height: 10px;
@@ -37,6 +40,7 @@ html {
   animation-duration: calc(125s / 4);
   z-index: 10;
 }
+
 .obj1:nth-child(even) {
   background: #05ddcc;
   box-shadow: 0 0 51px 33px #05ddcc, 0px 0px 72px 26px #73ded5,
@@ -49,6 +53,7 @@ html {
   0% {
     transform: translateY(100vh);
   }
+
   100% {
     transform: translateY(-100vh);
   }
@@ -58,6 +63,7 @@ html {
   0% {
     transform: translateY(100vh) translateX(-100vh);
   }
+
   100% {
     transform: translateY(-100vh) translateX(100vh);
   }

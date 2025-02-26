@@ -27,20 +27,18 @@ const TechStackCard = ({ item }) => {
       <div className={classes.techstackLogoContainer}>
         <img src={item.logo} alt="teckstack"></img>
       </div>
-      <p className={classes.teckStackTitle}>{item.name}</p>
+      <p className={classes.techStackTitle}>{item.name}</p>
     </div>
   );
 };
 
 const TechStack = () => {
   return (
-    <div className={classes.techstackOuterContainer}>
       <div className={classes.techstackInnerContainer}>
         {texkStack.map((item, index) => (
           <TechStackCard key={index} item={item} />
         ))}
       </div>
-    </div>
   );
 };
 

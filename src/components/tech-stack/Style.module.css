@@ -1,11 +1,9 @@
 .techstackInnerContainer {
-  padding: 1rem;
   color: #a1a7b3;
-}
-.techstackInnerContainer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 .techstackCardContainer {
@@ -24,10 +22,24 @@
   padding: 1.5rem;
 }
 
+@media (max-width: 600px) {
+  .techstackLogoContainer {
+    width: 55px;
+    height: 55px;
+    padding: 1rem;
+  }
+}
+
 .techstackLogoContainer img {
   width: 100%;
   height: 100%;
 }
-.teckStackTitle {
+.techStackTitle {
   text-transform: uppercase;
+  font-size: 1rem;
+}
+@media (max-width: 600px) {
+  .techStackTitle {
+    font-size: 0.7rem;
+  }
 }
