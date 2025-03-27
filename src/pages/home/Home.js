@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className={classes.homeContainer}>
       <Header />
-      <Drawer />
+       {/* <Drawer />  */}
       <Introduction />
       <Caption caption1="TechStack" caption2={``} />
       <TechStack />
